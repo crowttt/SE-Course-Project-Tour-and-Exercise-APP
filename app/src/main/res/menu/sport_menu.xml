@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/jog"
+        android:title="慢跑"/>
+
+    <item android:id="@+id/run"
+        android:title="跑步"/>
+
+    <item android:id="@+id/bike"
+        android:title="單車"/>
+
+    <item android:id="@+id/badminton"
+        android:title="羽球"/>
+
+    <item android:id="@+id/tennis"
+        android:title="網球"/>
+
+    <item android:id="@+id/pingpong"
+        android:title="桌球"/>
+
+    <item android:id="@+id/basketball"
+        android:title="籃球"/>
+
+    <item android:id="@+id/yoga"
+        android:title="瑜珈"/>
+
+    <item android:id="@+id/gymnastic"
+        android:title="有氧運動"/>
+</menu>

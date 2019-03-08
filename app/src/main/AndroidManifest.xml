@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="seproject.ccu.seproject">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".HomeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/home_widget_info" />
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".TourGuide.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <!-- Google Service版本 -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Google Map API key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- 地圖元件 -->
+        <activity
+            android:name=".TourGuide.MapsActivity"
+            android:label="@string/title_activity_maps"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".TourGuide.MapFrag"
+            android:label="@string/MapFrag" />
+        <activity android:name=".MySport.MyExerciseActivity" />
+        <activity android:name=".MySport.SportList.SportListActivity" />
+        <activity android:name=".MySport.BMICalculatorActivity" />
+        <activity android:name=".MySport.UserDataActivity" />
+        <activity android:name=".MySport.SportList.DoSportActivity" />
+        <activity android:name=".MySport.SportCalculatorResultActivity" />
+        <activity android:name=".MySport.ExerciseResultActivity" />
+        <activity android:name=".TourGuide.TourGuideActivity" />
+        <activity android:name=".PointMenuActivity"/>
+
+        <service android:name=".MySport.SportList.LocationService" />
+        <service android:name=".MySport.SportList.TimerService" />
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+    </application>
+
+</manifest>

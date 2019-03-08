@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorMainBackground">#87B9D6</color>
+    <color name="colorBackground">#33FFFFFF</color>
+    <color name="colorIcon">#545454</color>
+    <color name="colorBMI">#CCEEFF</color>
+    <color name="colorResult">#EEFFBB</color>
+
+    <color name="colorLight">#0066FF</color>
+    <color name="colorNormal">#00FF00</color>
+    <color name="colorHeavy">#FFFF00</color>
+    <color name="colorLittleFat">#FFBB00</color>
+    <color name="colorMiddleFat">#FF8800</color>
+    <color name="colorVeryFat">#FF0000</color>
+</resources>

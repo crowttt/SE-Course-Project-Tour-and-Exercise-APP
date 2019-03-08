@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MySport.SportList.SportListActivity">
+
+    <TextView
+        android:id="@+id/sportListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="運動選單"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/walkImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/sport_list_walking"
+        android:clickable="true"
+        android:onClick="onClickWalk"
+        app:layout_constraintBottom_toTopOf="@+id/walkText"
+        app:layout_constraintEnd_toStartOf="@+id/runImage" />
+
+    <ImageView
+        android:id="@+id/runImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/sport_list_running"
+        android:clickable="true"
+        android:onClick="onClickRun"
+        app:layout_constraintBottom_toTopOf="@+id/runText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bikeImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/sport_list_cycling"
+        android:clickable="true"
+        android:onClick="onClickBike"
+        app:layout_constraintBottom_toTopOf="@+id/bikeText"
+        app:layout_constraintStart_toEndOf="@+id/runImage" />
+
+    <ImageView
+        android:id="@+id/badmintonImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/sport_list_badminton"
+        android:clickable="true"
+        android:onClick="onClickBadminton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tennisImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tennisImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/sport_list_tennis"
+        android:clickable="true"
+        android:onClick="onClickTennis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pingpongImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/sport_list_ping_pong"
+        android:clickable="true"
+        android:onClick="onClickPingpong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tennisImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/basketballImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/sport_list_basketball"
+        android:clickable="true"
+        android:onClick="onClickBasketball"
+        app:layout_constraintEnd_toStartOf="@+id/yogaImage"
+        app:layout_constraintTop_toBottomOf="@+id/badmintonText" />
+
+    <ImageView
+        android:id="@+id/yogaImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/sport_list_lotus_position"
+        android:clickable="true"
+        android:onClick="onClickYoga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tennisText" />
+
+    <ImageView
+        android:id="@+id/gymnasticImage"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/sport_list_funambulist"
+        android:clickable="true"
+        android:onClick="onClickGymnastic"
+        app:layout_constraintStart_toEndOf="@+id/yogaImage"
+        app:layout_constraintTop_toBottomOf="@+id/pingpongText" />
+
+    <TextView
+        android:id="@+id/runText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="跑步"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/tennisImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/walkText"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="健走"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/badmintonImage"
+        app:layout_constraintEnd_toStartOf="@+id/runText" />
+
+    <TextView
+        android:id="@+id/bikeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="36dp"
+        android:text="單車"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/pingpongImage"
+        app:layout_constraintStart_toEndOf="@+id/runText" />
+
+    <TextView
+        android:id="@+id/tennisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="網球"
+        android:textSize="23sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tennisImage" />
+
+    <TextView
+        android:id="@+id/badmintonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:text="羽球"
+        android:textSize="23sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/tennisText"
+        app:layout_constraintTop_toBottomOf="@+id/badmintonImage" />
+
+    <TextView
+        android:id="@+id/pingpongText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:text="桌球"
+        android:textSize="23sp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/tennisText"
+        app:layout_constraintTop_toBottomOf="@+id/pingpongImage" />
+
+    <TextView
+        android:id="@+id/yogaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="瑜珈"
+        android:textSize="23sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yogaImage" />
+
+    <TextView
+        android:id="@+id/basketballText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:text="籃球"
+        android:textSize="23sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/yogaText"
+        app:layout_constraintTop_toBottomOf="@+id/basketballImage" />
+
+    <TextView
+        android:id="@+id/gymnasticText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="有氧運動"
+        android:textSize="23sp"
+        app:layout_constraintStart_toEndOf="@+id/yogaText"
+        app:layout_constraintTop_toBottomOf="@+id/gymnasticImage" />
+
+
+</android.support.constraint.ConstraintLayout>

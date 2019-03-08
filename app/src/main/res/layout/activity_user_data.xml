@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MySport.UserDataActivity">
+
+    <TextView
+        android:id="@+id/userProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="個人資料"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="10dp"
+        android:text="請輸入姓名："
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/surname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="9dp"
+        android:ems="3"
+        android:gravity="center"
+        android:hint="姓"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/givenName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/givenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="80dp"
+        android:ems="3"
+        android:gravity="center"
+        android:hint="名"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="性別："
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/genderRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="144dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surname">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="男"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            tools:layout_editor_absoluteX="318dp"
+            tools:layout_editor_absoluteY="175dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/birthdayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="出生年月日："
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/birthdayYear"
+        app:layout_constraintTop_toBottomOf="@+id/genderText" />
+
+    <EditText
+        android:id="@+id/birthdayYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="4"
+        android:gravity="center"
+        android:inputType="date"
+        android:hint="年"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/birthdayMonth"
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
+
+    <EditText
+        android:id="@+id/birthdayMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="date"
+        android:textSize="20sp"
+        android:hint="月"
+        app:layout_constraintEnd_toStartOf="@+id/birthdayDay"
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
+
+    <EditText
+        android:id="@+id/birthdayDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:ems="2"
+        android:gravity="center"
+        android:inputType="date"
+        android:textSize="20sp"
+        android:hint="日"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
+
+    <TextView
+        android:id="@+id/userHeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="身高："
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/userHeightNum"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayText" />
+
+    <EditText
+        android:id="@+id/userHeightNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/unitCentimeter"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayYear" />
+
+    <TextView
+        android:id="@+id/unitCentimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="81dp"
+        android:text="公分"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayYear" />
+
+    <TextView
+        android:id="@+id/unitKilogram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="81dp"
+        android:text="公斤"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unitCentimeter" />
+
+    <EditText
+        android:id="@+id/userWeightNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="6"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/unitKilogram"
+        app:layout_constraintTop_toBottomOf="@+id/userHeightNum" />
+
+    <TextView
+        android:id="@+id/userWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="體重："
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/userWeightNum"
+        app:layout_constraintTop_toBottomOf="@+id/userHeightText" />
+
+    <TextView
+        android:id="@+id/dailyGoalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="每日目標："
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/dailyGoalNum"
+        app:layout_constraintTop_toBottomOf="@+id/userWeightText" />
+
+    <EditText
+        android:id="@+id/dailyGoalNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="6"
+        android:gravity="center"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/userWeightNum" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="81dp"
+        android:text="大卡"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unitKilogram" />
+
+    <Button
+        android:id="@+id/userProfileConfirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="80dp"
+        android:text="確認"
+        android:textSize="20sp"
+        android:onClick="onClickConfirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

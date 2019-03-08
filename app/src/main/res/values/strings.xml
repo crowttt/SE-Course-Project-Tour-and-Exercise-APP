@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">SEproject</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="activity_main">智慧運旅</string>
+    <string name="my_exercise">我的運動</string>
+    <string name="tour_guide">觀光導覽</string>
+    <string name="points">累積點數</string>
+    <string name="mileage">本日里程數</string>
+    <string name="calorie">本日卡路里</string>
+    <string name="weather">天氣</string>
+
+    <string name="city">城市名</string>
+    <string name="description">無資料</string>
+    <string name="celsius">0</string>
+    <string name="humidity">0%</string>
+    <string name="pm25">0</string>
+    <string name="updatetime">最後更新時間</string>
+
+    <string-array name="spinner_selection">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="badmintonSelection">
+        <item>單/雙打</item>
+        <item>競賽</item>
+    </string-array>
+
+    <string-array name="tennisSelection">
+        <item>單打</item>
+        <item>雙打</item>
+        <item>擊球練習</item>
+    </string-array>
+
+    <string-array name="basketballSelection">
+        <item>練習賽</item>
+        <item>投籃</item>
+        <item>比賽</item>
+    </string-array>
+
+    <string-array name="gymnasticSelection">
+        <item>水中有氧</item>
+        <item>有氧舞蹈</item>
+    </string-array>
+
+    <string-array name="sportSelection">
+        <item>健走</item>
+        <item>跑步</item>
+        <item>單車</item>
+        <item>羽球</item>
+        <item>網球</item>
+        <item>桌球</item>
+        <item>籃球</item>
+        <item>瑜珈</item>
+        <item>有氧運動</item>
+    </string-array>
+
+    <string-array name="sport_grade_time_unit">
+        <item>本日</item>
+        <item>本周</item>
+        <item>本月</item>
+        <item>今年</item>
+        <item>全部</item>
+    </string-array>
+
+    <string name="test_tex">test tex 1</string>
+    <string name="test_image">test image 1</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="longitude_label">經度</string>
+    <string name="latitude_label">緯度</string>
+    <string name="MapFrag">map</string>
+    <string name="title">景點觀光</string>
+
+
+</resources>
